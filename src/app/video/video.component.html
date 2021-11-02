@@ -1,0 +1,21 @@
+
+  <video id='video-player' width='600' height='300' class="video-js vjs-default-skin" controls>
+    <source
+       [src]="'https://media-yavin.okbcdn.net/yavin-live/yavinlive/4KaNpR3eL93hqIz3PN6iNXI399BCZYxH2nmoY2U3/60A99B420E32832F38D902D74F1DB676/manifest.m3u8'"
+       type="application/x-mpegURL">
+  </video>
+  
+  <button class="btn btn-primary" (click)="create()">Click here -- New Stream</button> 
+  
+  <div class="container" style="margin:20px">
+    <div class="row">
+        <input type="number" [(ngModel)]='seekTime' placeholder="Enter Seek time"> 
+  
+        <button class="btn btn-danger" (click)="destroy()">destroy</button>
+  
+        <button class="btn btn-info" (click)="seek()">seek</button>
+  
+        <button class="btn btn-warning" (click)="play()">play/pause</button>
+    </div>
+  
+  </div>  

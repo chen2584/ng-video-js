@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "096c462d-82f6-466a-9180-c8076f53da95"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -29,7 +32,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/video.js/dist/video.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -96,7 +101,11 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/video.js/dist/video.min.js",
+              "./node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.min.js",
+              "./node_modules/videojs-contrib-hls/dist/videojs-dvrseekbar.min.js"
+            ]
           }
         }
       }
